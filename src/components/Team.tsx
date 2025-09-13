@@ -58,7 +58,7 @@ const Team: FC = () => {
     <section className="relative pt-32 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex items-start gap-8 mb-10">
-          <h2 className="inline-block bg-lime-300 text-2xl rounded-md px-4 py-2 font-bold">
+          <h2 className="inline-block bg-primary text-2xl rounded-md px-4 py-2 font-bold">
             Team
           </h2>
           <p className="text-black max-w-xl">
@@ -72,23 +72,24 @@ const Team: FC = () => {
               className="bg-white rounded-2xl shadow-[0_4px_0_#000] border border-black p-6 flex flex-col"
             >
               {/* Top Section */}
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4">
+
+                <div className="flex justify-between gap-4">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-24 h-24 object-cover"
                   />
-                  <div className="pt-12">
+                  <div className="flex flex-col justify-end">
                     <h3 className="font-semibold text-lg">{member.name}</h3>
                     <p className="text-sm text-gray-500">{member.role}</p>
                   </div>
+                  <div>
                     <img
                     src={member.social}
                     className="w-7 h-7 object-cover"
                     />
+                  </div>
                 </div>
-              </div>
 
               {/* Divider */}
               <div className="border-t border-black my-4"></div>

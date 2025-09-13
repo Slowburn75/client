@@ -1,1 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
+
+.testimonial-bubble::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transform: translateY(calc(100% - 1px));
+    width: 55px;
+    height: 30px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA1NiAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuNDUxMTcgMS4yMjU1OEw1NC41NDg4IDEuMjI1NTlMMjggMjkuMTc4N0wxLjQ1MTE3IDEuMjI1NThaIiBmaWxsPSIjMjEyNDFEIiBzdHJva2U9IiNCOUZGNjYiLz4KPHBhdGggZD0iTTEuNSAwLjVINTQuNUw1My4xMjUgMkgyLjg3ODkxTDEuNSAwLjVaIiBmaWxsPSIjMjEyNDFEIi8+Cjwvc3ZnPgo=') no-repeat center center;
+    background-size: contain;
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+
+@theme {
+    --color-primary: oklch(0.9237 0.1959 130.23); /* Lime-400 */
+    --font-main: 'Space Grotesk', sans-serif;
+}

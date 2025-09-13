@@ -45,7 +45,7 @@ export default function Process() {
     <section className="relative pt-32 bg-white overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex items-start gap-8 mb-10">
-          <h2 className="inline-block bg-lime-300 text-2xl rounded-md px-4 py-2 font-bold">
+          <h2 className="inline-block bg-primary text-2xl rounded-md px-4 py-2 font-bold">
             Our Working Process
           </h2>
           <p className="text-gray-600 max-w-xl">
@@ -59,7 +59,7 @@ export default function Process() {
                     <div
                     key={index}
                     className={`rounded-2xl border shadow-[0_4px_0_#000] p-6 transition-colors duration-300 cursor-pointer ${
-                        isOpen ? "bg-lime-300" : "bg-gray-50"
+                        isOpen ? "bg-primary" : "bg-gray-50"
                     }`}
                     onClick={() => toggleStep(index)}
                     >

@@ -8,6 +8,8 @@ import Study from './components/Study.tsx';
 import Process from './components/Process.tsx';
 import Team from './components/Team.tsx';
 import Testimonials from './components/Testimonials.tsx';
+import Contact from './components/Contact.tsx';
+import Footer from './components/footer.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <>
@@ -19,5 +21,7 @@ createRoot(document.getElementById('root')!).render(
     <Process />
     <Team />
     <Testimonials />
+    <Contact />
+    <Footer />
   </>
 );

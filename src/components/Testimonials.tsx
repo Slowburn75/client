@@ -45,7 +45,7 @@ const Testimonials: FC = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         {/* Header */}
         <div className="flex items-start gap-8 mb-10">
-          <h2 className="inline-block bg-lime-300 text-2xl rounded-md px-4 py-2 font-bold">
+          <h2 className="inline-block bg-primary text-2xl rounded-md px-4 py-2 font-bold">
             Testimonials
           </h2>
           <p className="text-gray-600 max-w-xl">
@@ -56,13 +56,13 @@ const Testimonials: FC = () => {
         {/* Carousel */}
         <div className="relative bg-black rounded-2xl p-10 lg:p-16">
           {/* Active Testimonial Card */}
-          <div className="transition-opacity duration-500 border border-lime-300 rounded-2xl p-6 text-center">
+          <div className="transition-opacity duration-500 bg-[#21241D] border border-primary rounded-4xl p-6 text-center testimonial-bubble relative">
             <p className="text-white italic mb-6">
               "{testimonials[currentIndex].note}"
             </p>
             </div><br />
             <div className="text-center">
-             <h3 className="text-lg text-lime-300 font-bold">
+             <h3 className="text-lg text-primary font-bold">
               {testimonials[currentIndex].name}
             </h3>
             <p className="text-sm text-white">
@@ -89,7 +89,7 @@ const Testimonials: FC = () => {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`w-3 h-3 rounded-full transition ${
-                    index === currentIndex ? "bg-lime-300" : "bg-white"
+                    index === currentIndex ? "bg-primary" : "bg-white"
                   }`}
                 />
               ))}

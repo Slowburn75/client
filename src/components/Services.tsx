@@ -17,10 +17,10 @@ const ServiceCard: FC<{ title: string; img: string; variant: Variant }> = ({ tit
     variant === "dark"
       ? "bg-slate-900 text-white"
       : variant === "lime"
-      ? "bg-lime-300 text-black"
+      ? "bg-primary text-black"
       : "bg-gray-100 text-black";
 
-  const badgeBg = variant === "dark" ? "bg-lime-300 text-black" : "bg-white text-black";
+  const badgeBg = variant === "dark" ? "bg-primary text-black" : "bg-white text-black";
 
   return (
     <div className="relative pt-14">
@@ -69,7 +69,7 @@ const Services: FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* header */}
         <div className="flex items-start gap-8 mb-10">
-          <h2 className="inline-block bg-lime-300 text-2xl rounded-md px-4 py-2 font-bold">Services</h2>
+          <h2 className="inline-block bg-primary text-2xl rounded-md px-4 py-2 font-bold">Services</h2>
           <p className="text-gray-600 max-w-xl">
             At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
           </p>
