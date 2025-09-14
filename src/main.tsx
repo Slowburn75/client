@@ -10,6 +10,7 @@ import Team from './components/Team.tsx';
 import Testimonials from './components/Testimonials.tsx';
 import Contact from './components/Contact.tsx';
 import Footer from './components/footer.tsx';
+import LandingPage from './components/LandingPage.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <>
@@ -23,5 +24,6 @@ createRoot(document.getElementById('root')!).render(
     <Testimonials />
     <Contact />
     <Footer />
+    <LandingPage />
   </>
 );
